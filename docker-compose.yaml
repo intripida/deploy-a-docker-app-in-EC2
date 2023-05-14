@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  app:
+    container_name: devops_karen
+    build: .
+    restart: always
+
+    # Specify env file for credentials
+    # The `AWS_INSTANCE_URL`env var will be prepended to that file
+    # env_file: .env
+
+    volumes:
+    - .:/app
+    - /app/node_modules
+
+    ports:
+    - 3000:3000
