@@ -17,7 +17,7 @@ jobs:
     steps:
     - id: deploy
       name: Deploy
-      uses: intripida/deploy-a-docker-app-in-EC2@v0.4.2
+      uses: intripida/deploy-a-docker-app-in-EC2@v2.4.0
       with:
         aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID}}
         aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
